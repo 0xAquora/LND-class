@@ -16,7 +16,7 @@
           <li><a href="#programa">Programa</a></li>
           <li><a href="#listas">Recomendaciones y servicios</a></li>
           <li><a href="#privacidad">Política de privacidad</a></li>
-          <li><a href="#formulario-ejemplo">Inscripción</a></li>
+          <li><a href="#inscripcion">Inscripción</a></li>
         </ul>
       </nav>
     </header>
@@ -184,49 +184,78 @@
         </p>
       </section>
 
-      <section id="formulario-ejemplo">
+      <section id="inscripcion">
         <h2>Formulario de inscripción</h2>
-        <form action="#" method="post">
+        <form action="https://webhook.site/c90225fa-94f6-48a1-a028-5ba286076e88" method="post">
           <fieldset>
-            <legend>Datos básicos</legend>
+            <legend>Datos personales</legend>
 
-            <label for="nombre">Nombre y apellidos:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <div>
+              <label for="nombre">Nombre y apellidos:</label>
+              <input type="text" id="nombre" name="nombre" required maxlength="100">
+            </div>
 
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+            <div>
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required>
+            </div>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
+            <div>
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9+\s-]{7,15}">
+            </div>
           </fieldset>
 
           <fieldset>
-            <legend>Preferencias</legend>
+            <legend>Preferencias de participación</legend>
 
-            <label for="opcion">Selección:</label>
-            <select id="opcion" name="opcion" required>
-              <option value="">Selecciona una opción</option>
-              <option value="op1">Opción 1</option>
-              <option value="op2">Opción 2</option>
-              <option value="op3">Opción 3</option>
-              <option value="op4">Opción 4</option>
-            </select>
+            <div>
+              <label for="actividad">Actividad preferida:</label>
+              <select id="actividad" name="actividad" required>
+                <option value="">Selecciona una actividad</option>
+                <option value="taller-cesteria">Taller de Cestería de Vara</option>
+                <option value="charla-memoria">Charla sobre memoria oral y fiestas locales</option>
+                <option value="concierto-trio-laurisilva">Concierto de Trío Laurisilva</option>
+                <option value="concierto-cumbre-brass">Actuación de Banda Cumbre Brass</option>
+              </select>
+            </div>
 
-            <p>Elige una franja:</p>
-            <input type="radio" id="turno-manana" name="turno" value="manana" required>
-            <label for="turno-manana">Mañana</label>
-            <input type="radio" id="turno-tarde" name="turno" value="tarde">
-            <label for="turno-tarde">Tarde</label>
+            <fieldset>
+              <legend>Horario preferido</legend>
 
-            <p>Marcar casillas:</p>
-            <input type="checkbox" id="extra-info" name="extras" value="info">
-            <label for="extra-info">Información adicional</label>
+              <input type="radio" id="horario-manana" name="horario" value="manana" required>
+              <label for="horario-manana">Mañana</label>
 
-            <label for="comentarios">Comentarios:</label>
-            <textarea id="comentarios" name="comentarios" rows="3" maxlength="300"></textarea>
+              <input type="radio" id="horario-tarde" name="horario" value="tarde">
+              <label for="horario-tarde">Tarde</label>
+
+              <input type="radio" id="horario-indiferente" name="horario" value="indiferente">
+              <label for="horario-indiferente">Indiferente</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Servicios de interés</legend>
+
+              <input type="checkbox" id="servicio-agua" name="servicio_agua" value="agua_potable">
+              <label for="servicio-agua">Agua potable</label>
+
+              <input type="checkbox" id="servicio-accesibilidad" name="servicio_aseos" value="aseos_accesibles">
+              <label for="servicio-accesibilidad">Aseos accesibles</label>
+
+              <input type="checkbox" id="servicio-descanso" name="servicio_descanso" value="zona_descanso">
+              <label for="servicio-descanso">Zona de descanso</label>
+
+              <input type="checkbox" id="servicio-info" name="servicio_info" value="punto_informacion">
+              <label for="servicio-info">Punto de información</label>
+            </fieldset>
+
+            <div>
+              <label for="comentarios">Comentarios:</label>
+              <textarea id="comentarios" name="comentarios" rows="3" maxlength="300"></textarea>
+            </div>
           </fieldset>
 
-          <button type="submit">Enviar</button>
+          <button type="submit">Enviar inscripción</button>
         </form>
       </section>
     </main>
