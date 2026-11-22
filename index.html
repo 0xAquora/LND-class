@@ -3,59 +3,189 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartado 1 - Estructura y elementos HTML</title>
+    <title>Festival Risco y Voz - Teror, Gran Canaria</title>
   </head>
   <body>
-    <header>
-      <h1>Título principal</h1>
-      <nav>
+    <header id="inicio">
+      <h1>Festival Risco y Voz</h1>
+      <p>Lema: «Cultura viva entre medianías y plazas»</p>
+      <nav aria-label="Navegación principal">
         <ul>
-          <li><a href="#seccion-principal">Sección principal</a></li>
-          <li><a href="#tabla-ejemplo">Tabla</a></li>
-          <li><a href="#formulario-ejemplo">Formulario</a></li>
+          <li><a href="#presentacion">Presentación</a></li>
+          <li><a href="#artistas">Artistas y actividades</a></li>
+          <li><a href="#programa">Programa</a></li>
+          <li><a href="#listas">Recomendaciones y servicios</a></li>
+          <li><a href="#privacidad">Política de privacidad</a></li>
+          <li><a href="#formulario-ejemplo">Inscripción</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="seccion-principal">
-        <h2>Encabezado de sección</h2>
+      <section id="presentacion">
+        <h2>Presentación del festival</h2>
+        <p>
+          <strong>Localidad:</strong> Teror, Gran Canaria.
+          <strong>Fecha:</strong> 19 y 20 de junio de 2027.
+        </p>
+        <p>
+          Festival Risco y Voz es una cita anual impulsada junto al Ayuntamiento de Teror
+          que reúne música en directo, talleres artesanales, encuentros culturales y zonas
+          de ocio pensadas para todo tipo de público.
+        </p>
+        <h3>Objetivos del festival</h3>
+        <p>
+          Poner en valor el talento artístico local, facilitar el acceso a actividades
+          culturales abiertas y fomentar una participación cívica y respetuosa con el entorno.
+        </p>
+        <p>
+          Más información municipal en el
+          <a href="https://teror.es" target="_blank">Ayuntamiento de Teror</a>.
+        </p>
+      </section>
+
+      <section id="artistas">
+        <h2>Artistas y actividades</h2>
+
         <article>
-          <h3>Título de artículo</h3>
-          <h4>Subtítulo de artículo</h4>
-          <p>Párrafo introductorio de ejemplo con un <a href="https://example.com" target="_blank" rel="noopener noreferrer">enlace externo</a>.</p>
+          <h3>Trío Laurisilva</h3>
+          <h4>Música acústica y de raíz</h4>
+          <p>
+            Formación musical que combina guitarra española, cuerda pulsada y voces en un
+            repertorio cercano y de corte tradicional renovado.
+          </p>
           <figure>
-            <img src="images/placeholder.png" alt="Descripción alternativa de la imagen" height="100">
-            <figcaption>Descripción de la imagen</figcaption>
+            <img src="images/trio-laurisilva.png" alt="Tres músicos con guitarras en un escenario" height="300">
+            <figcaption>Actuación de Trío Laurisilva en la plaza</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Taller de Cestería de Vara</h3>
+          <h4>Oficio artesanal participativo</h4>
+          <p>
+            Actividad práctica guiada donde los asistentes conocen los materiales tradicionales
+            y elaboran una pieza sencilla paso a paso.
+          </p>
+          <figure>
+            <img src="images/taller-cesteria.jpg" alt="Cestas artesanales tejidas a mano colocadas sobre una mesa de madera" height="300">
+            <figcaption>Muestra de piezas del taller de cestería</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Banda Cumbre Brass</h3>
+          <h4>Viento y ritmo en directo</h4>
+          <p>
+            Conjunto de metales y percusión con un repertorio dinámico pensado para animar
+            las sesiones de tarde en el recinto.
+          </p>
+          <figure>
+            <img src="images/cumbre-brass.jpg" alt="Integrantes de una banda de metales tocando trompetas y trombones" height="300">
+            <figcaption>Grupo de Banda Cumbre Brass antes del concierto</figcaption>
           </figure>
         </article>
       </section>
 
-      <section id="tabla-ejemplo">
-        <h2>Tabla</h2>
+      <section id="programa">
+        <h2>Programa del festival</h2>
         <table>
-          <caption>Título de ejemplo de la tabla</caption>
+          <caption>Programación de la primera jornada del festival</caption>
           <thead>
             <tr>
-              <th scope="col">Columna 1</th>
-              <th scope="col">Columna 2</th>
-              <th scope="col">Columna 3</th>
-              <th scope="col">Columna 4</th>
+              <th scope="col">Hora</th>
+              <th scope="col">Actividad</th>
+              <th scope="col">Escenario o lugar</th>
+              <th scope="col">Duración</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Dato 1</td>
-              <td>Dato 2</td>
-              <td>Dato 3</td>
-              <td>Dato 4</td>
+              <td>10:00</td>
+              <td>Apertura de puertas y paseo inaugural</td>
+              <td>Plaza del Pino</td>
+              <td>1 hora</td>
+            </tr>
+            <tr>
+              <td>11:00</td>
+              <td>Taller de Cestería de Vara</td>
+              <td>Sala Cultural El Molino</td>
+              <td>2 horas</td>
+            </tr>
+            <tr>
+              <td>13:30</td>
+              <td>Zona de ocio y descanso familiar</td>
+              <td>Parque de la Alameda</td>
+              <td>2 horas</td>
+            </tr>
+            <tr>
+              <td>16:00</td>
+              <td>Banda Cumbre Brass</td>
+              <td>Escenario La Fuente</td>
+              <td>1 hora y 30 minutos</td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td>Charla sobre memoria oral y fiestas locales</td>
+              <td>Casa de la Cultura</td>
+              <td>1 hora</td>
+            </tr>
+            <tr>
+              <td>20:00</td>
+              <td>Trío Laurisilva</td>
+              <td>Escenario Principal</td>
+              <td>2 horas</td>
             </tr>
           </tbody>
         </table>
       </section>
 
+      <section id="listas">
+        <h2>Recomendaciones y servicios</h2>
+
+        <h3>Recomendaciones para asistir</h3>
+        <ol>
+          <li>Acudir con antelación suficiente a los talleres y charlas con plazas limitadas.</li>
+          <li>Llevar ropa de abrigo ligera para la tarde y calzado cómodo para caminar.</li>
+          <li>Respetar las zonas señalizadas y depositar los envases en los puntos de reciclaje.</li>
+          <li>Revisar los avisos de organización en caso de cambios por meteorología.</li>
+        </ol>
+
+        <h3>Servicios disponibles</h3>
+        <ul>
+          <li>Fuentes de agua potable</li>
+          <li>Aseos accesibles y zona de descanso</li>
+          <li>Punto de información y asistencia sanitaria</li>
+          <li>Puestos de comida y bebida</li>
+        </ul>
+      </section>
+
+      <aside id="info-complementaria">
+        <h2>Información complementaria</h2>
+        <p>
+          Para evitar desplazamientos en vehículo privado, se aconseja consultar las rutas
+          de transporte público en
+          <a href="https://www.globalsu.net" target="_blank">Global Gran Canaria</a>.
+        </p>
+        <p>
+          Por seguridad, no se permite el acceso con botellas de vidrio ni el uso de pirotecnia
+          dentro del recinto del festival.
+        </p>
+      </aside>
+
+      <section id="privacidad">
+        <h2>Política de privacidad</h2>
+        <p>
+          Los datos personales introducidos en el formulario de inscripción (nombre y apellidos,
+          correo electrónico, teléfono y opciones de actividad, horario y servicios) se
+          emplearán exclusivamente para tramitar la inscripción en las actividades y enviar
+          comunicaciones relacionadas con la organización del festival. No se compartirán con
+          terceros fuera de los supuestos previstos por la ley.
+        </p>
+      </section>
+
       <section id="formulario-ejemplo">
-        <h2>Formulario</h2>
+        <h2>Formulario de inscripción</h2>
         <form action="#" method="post">
           <fieldset>
             <legend>Datos básicos</legend>
@@ -99,15 +229,16 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
-
-      <aside>
-        <h2>Información complementaria</h2>
-        <p>Contenido lateral de apoyo.</p>
-      </aside>
     </main>
 
     <footer id="footer">
-      <p>Pie de página</p>
+      <p>&copy; 2027 Festival Risco y Voz - Ayuntamiento de Teror. Todos los derechos reservados.</p>
+      <p>
+        Redes sociales:
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </p>
+      <p><a href="#inicio">Volver arriba</a></p>
     </footer>
   </body>
 </html>
