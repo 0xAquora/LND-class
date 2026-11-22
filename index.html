@@ -1,43 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festival en Gran Canaria - Estructura base</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 1 - Estructura y elementos HTML</title>
   </head>
   <body>
     <header>
-      <h1>Nombre del festival</h1>
+      <h1>Título principal</h1>
       <nav>
         <ul>
-          <li><a href="#presentacion">Inicio</a></li>
-          <li><a href="#programacion">Programa</a></li>
-          <li><a href="#inscripcion">Inscripción</a></li>
+          <li><a href="#seccion-principal">Sección principal</a></li>
+          <li><a href="#tabla-ejemplo">Tabla</a></li>
+          <li><a href="#formulario-ejemplo">Formulario</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="presentacion">
-        <h2>Sección principal</h2>
+      <section id="seccion-principal">
+        <h2>Encabezado de sección</h2>
         <article>
-          <h3>Actividad o artista</h3>
-          <p>Texto introductorio de ejemplo para este apartado.</p>
+          <h3>Título de artículo</h3>
+          <h4>Subtítulo de artículo</h4>
+          <p>Párrafo introductorio de ejemplo con un <a href="https://example.com" target="_blank" rel="noopener noreferrer">enlace externo</a>.</p>
           <figure>
-            <img src="" alt="Descripción de la imagen" />
-            <figcaption>Pie de imagen descriptivo</figcaption>
+            <img src="images/placeholder.png" alt="Descripción alternativa de la imagen" height="100">
+            <figcaption>Descripción de la imagen</figcaption>
           </figure>
         </article>
       </section>
 
+      <section id="tabla-ejemplo">
+        <h2>Tabla</h2>
+        <table>
+          <caption>Título de ejemplo de la tabla</caption>
+          <thead>
+            <tr>
+              <th scope="col">Columna 1</th>
+              <th scope="col">Columna 2</th>
+              <th scope="col">Columna 3</th>
+              <th scope="col">Columna 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+              <td>Dato 3</td>
+              <td>Dato 4</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="formulario-ejemplo">
+        <h2>Formulario</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Datos básicos</legend>
+
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferencias</legend>
+
+            <label for="opcion">Selección:</label>
+            <select id="opcion" name="opcion" required>
+              <option value="">Selecciona una opción</option>
+              <option value="op1">Opción 1</option>
+              <option value="op2">Opción 2</option>
+              <option value="op3">Opción 3</option>
+              <option value="op4">Opción 4</option>
+            </select>
+
+            <p>Elige una franja:</p>
+            <input type="radio" id="turno-manana" name="turno" value="manana" required>
+            <label for="turno-manana">Mañana</label>
+            <input type="radio" id="turno-tarde" name="turno" value="tarde">
+            <label for="turno-tarde">Tarde</label>
+
+            <p>Marcar casillas:</p>
+            <input type="checkbox" id="extra-info" name="extras" value="info">
+            <label for="extra-info">Información adicional</label>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="3" maxlength="300"></textarea>
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
       <aside>
         <h2>Información complementaria</h2>
-        <p>Aviso o dato adicional de apoyo.</p>
+        <p>Contenido lateral de apoyo.</p>
       </aside>
     </main>
 
     <footer id="footer">
-      <p>Pie de página del festival</p>
+      <p>Pie de página</p>
     </footer>
   </body>
 </html>
