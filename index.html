@@ -1,24 +1,43 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apartado 1 | codigo HTML basico</title>
+    <title>Festival en Gran Canaria - Estructura base</title>
   </head>
   <body>
     <header>
-      <nav>PLACEHOLDER NAVEGACIÓN</nav>
+      <h1>Nombre del festival</h1>
+      <nav>
+        <ul>
+          <li><a href="#presentacion">Inicio</a></li>
+          <li><a href="#programacion">Programa</a></li>
+          <li><a href="#inscripcion">Inscripción</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-      <section class="seccion">
-        <article class="articulo">
-          <figure src="" alt="PLACEHOLDER DESCRIPCION" class="imagen" id="img1">
-            <figcaption>PLACEHOLDER DE CAPTION PARA IMAGEN</figcaption>
+      <section id="presentacion">
+        <h2>Sección principal</h2>
+        <article>
+          <h3>Actividad o artista</h3>
+          <p>Texto introductorio de ejemplo para este apartado.</p>
+          <figure>
+            <img src="" alt="Descripción de la imagen" />
+            <figcaption>Pie de imagen descriptivo</figcaption>
           </figure>
         </article>
       </section>
-      <aside>PLACEHOLDER ASIDE</aside>
+
+      <aside>
+        <h2>Información complementaria</h2>
+        <p>Aviso o dato adicional de apoyo.</p>
+      </aside>
     </main>
-    <footer id="footer">PLACEHOLDER FOOTER</footer>
+
+    <footer id="footer">
+      <p>Pie de página del festival</p>
+    </footer>
   </body>
 </html>
