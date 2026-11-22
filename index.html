@@ -4,11 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival Risco y Voz - Teror, Gran Canaria</title>
+    <style>
+      body {
+        background-color: #f6f7f4;
+        color: #1f2924;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 20px 16px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1, h2, h3, h4 {
+        color: #1b4d3e;
+        margin-top: 0;
+      }
+
+      a {
+        color: #1b4d3e;
+      }
+
+      #inicio {
+        background-color: #e6efe9;
+        border-bottom: 2px solid #1b4d3e;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 24px;
+      }
+
+      #inicio nav {
+        background-color: #ffffff;
+        border: 1px solid #c5d0c9;
+        border-radius: 10px;
+        padding: 10px 14px;
+        margin-top: 14px;
+      }
+
+      #inicio nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      #inicio nav a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      #presentacion,
+      #artistas,
+      #programa,
+      #listas,
+      #privacidad,
+      #inscripcion {
+        background-color: #ffffff;
+        border: 1px solid #d5ddd8;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #artistas article {
+        border-top: 1px solid #e2e8e4;
+        padding-top: 14px;
+        margin-top: 14px;
+      }
+
+      #artistas img {
+        max-width: 75%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      #programa table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #4a5d54;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      #programa caption {
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      #programa th {
+        background-color: #e6efe9;
+      }
+
+      #programa th,
+      #programa td {
+        border-bottom: 1px solid #4a5d54;
+        border-right: 1px solid #4a5d54;
+        padding: 8px 10px;
+        text-align: left;
+      }
+
+      #programa th:last-child,
+      #programa td:last-child {
+        border-right: none;
+      }
+
+      #programa tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      #listas ol,
+      #listas ul {
+        padding-left: 22px;
+      }
+
+      #info-complementaria {
+        background-color: #eef3e6;
+        border-left: 4px solid #4f772d;
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin-bottom: 20px;
+      }
+
+      #privacidad {
+        font-size: 14px;
+      }
+
+      #inscripcion fieldset {
+        border: 1px solid #c5d0c9;
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin-bottom: 16px;
+      }
+
+      #inscripcion legend {
+        font-weight: bold;
+        color: #1b4d3e;
+        padding: 0 6px;
+      }
+
+      .campo-dato {
+        margin: 0 0 12px 0;
+      }
+
+      .campo-dato label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      #nombre,
+      #correo,
+      #telefono,
+      #actividad,
+      #comentarios {
+        width: 100%;
+        max-width: 460px;
+        padding: 7px 10px;
+        font-family: inherit;
+        font-size: 15px;
+        border: 1px solid #9aa9a1;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      #preferencias {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 16px;
+        align-items: stretch;
+      }
+
+      #preferencias legend,
+      #actividad-bloque,
+      #comentarios-bloque {
+        flex-basis: 100%;
+        margin: 0;
+      }
+
+      #actividad-bloque label,
+      #comentarios-bloque label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      #actividad {
+        max-width: 340px;
+      }
+
+      #comentarios {
+        max-width: 100%;
+      }
+
+      #fieldset-horario,
+      #fieldset-servicios {
+        flex: 1 1 280px;
+        min-width: 0;
+        margin-bottom: 0;
+      }
+
+      .fila-opciones {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        align-items: center;
+      }
+
+      .opcion {
+        margin-right: 4px;
+      }
+
+      button {
+        background-color: #1b4d3e;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #143a2e;
+      }
+
+      #footer {
+        background-color: #e6efe9;
+        border-top: 2px solid #1b4d3e;
+        border-radius: 12px;
+        padding: 18px 20px;
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
     <header id="inicio">
       <h1>Festival Risco y Voz</h1>
-      <p>Lema: «Cultura viva entre medianías y plazas»</p>
+      <p>Lema: «<em>Cultura viva entre medianías y plazas</em>»</p>
       <nav aria-label="Navegación principal">
         <ul>
           <li><a href="#presentacion">Presentación</a></li>
@@ -56,7 +295,7 @@
           </p>
           <figure>
             <img src="images/trio-laurisilva.png" alt="Tres músicos con guitarras en un escenario" height="300">
-            <figcaption>Actuación de Trío Laurisilva en la plaza</figcaption>
+            <figcaption><em>Actuación de Trío Laurisilva en la plaza</em></figcaption>
           </figure>
         </article>
 
@@ -69,7 +308,7 @@
           </p>
           <figure>
             <img src="images/taller-cesteria.jpg" alt="Cestas artesanales tejidas a mano colocadas sobre una mesa de madera" height="300">
-            <figcaption>Muestra de piezas del taller de cestería</figcaption>
+            <figcaption><em>Muestra de piezas del taller de cestería</em></figcaption>
           </figure>
         </article>
 
@@ -82,7 +321,7 @@
           </p>
           <figure>
             <img src="images/cumbre-brass.jpg" alt="Integrantes de una banda de metales tocando trompetas y trombones" height="300">
-            <figcaption>Grupo de Banda Cumbre Brass antes del concierto</figcaption>
+            <figcaption><em>Grupo de Banda Cumbre Brass antes del concierto</em></figcaption>
           </figure>
         </article>
       </section>
@@ -186,30 +425,30 @@
 
       <section id="inscripcion">
         <h2>Formulario de inscripción</h2>
-        <form action="https://webhook.site/c90225fa-94f6-48a1-a028-5ba286076e88" method="post">
+        <form action="https://webhook.site/934c9046-0cd3-4cba-8f9f-d6e8e6c27aab" method="post">
           <fieldset>
             <legend>Datos personales</legend>
 
-            <div>
+            <p class="campo-dato">
               <label for="nombre">Nombre y apellidos:</label>
               <input type="text" id="nombre" name="nombre" required maxlength="100">
-            </div>
+            </p>
 
-            <div>
+            <p class="campo-dato">
               <label for="correo">Correo electrónico:</label>
               <input type="email" id="correo" name="correo" required>
-            </div>
+            </p>
 
-            <div>
+            <p class="campo-dato">
               <label for="telefono">Teléfono:</label>
               <input type="tel" id="telefono" name="telefono" pattern="[0-9+\s-]{7,15}">
-            </div>
+            </p>
           </fieldset>
 
-          <fieldset>
+          <fieldset id="preferencias">
             <legend>Preferencias de participación</legend>
 
-            <div>
+            <p id="actividad-bloque">
               <label for="actividad">Actividad preferida:</label>
               <select id="actividad" name="actividad" required>
                 <option value="">Selecciona una actividad</option>
@@ -218,41 +457,52 @@
                 <option value="concierto-trio-laurisilva">Concierto de Trío Laurisilva</option>
                 <option value="concierto-cumbre-brass">Actuación de Banda Cumbre Brass</option>
               </select>
-            </div>
+            </p>
 
-            <fieldset>
+            <fieldset id="fieldset-horario">
               <legend>Horario preferido</legend>
-
-              <input type="radio" id="horario-manana" name="horario" value="manana" required>
-              <label for="horario-manana">Mañana</label>
-
-              <input type="radio" id="horario-tarde" name="horario" value="tarde">
-              <label for="horario-tarde">Tarde</label>
-
-              <input type="radio" id="horario-indiferente" name="horario" value="indiferente">
-              <label for="horario-indiferente">Indiferente</label>
+              <p class="fila-opciones">
+                <span>
+                  <input type="radio" id="horario-manana" class="opcion" name="horario" value="manana" required>
+                  <label for="horario-manana">Mañana</label>
+                </span>
+                <span>
+                  <input type="radio" id="horario-tarde" class="opcion" name="horario" value="tarde">
+                  <label for="horario-tarde">Tarde</label>
+                </span>
+                <span>
+                  <input type="radio" id="horario-indiferente" class="opcion" name="horario" value="indiferente">
+                  <label for="horario-indiferente">Indiferente</label>
+                </span>
+              </p>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="fieldset-servicios">
               <legend>Servicios de interés</legend>
-
-              <input type="checkbox" id="servicio-agua" name="servicio_agua" value="agua_potable">
-              <label for="servicio-agua">Agua potable</label>
-
-              <input type="checkbox" id="servicio-accesibilidad" name="servicio_aseos" value="aseos_accesibles">
-              <label for="servicio-accesibilidad">Aseos accesibles</label>
-
-              <input type="checkbox" id="servicio-descanso" name="servicio_descanso" value="zona_descanso">
-              <label for="servicio-descanso">Zona de descanso</label>
-
-              <input type="checkbox" id="servicio-info" name="servicio_info" value="punto_informacion">
-              <label for="servicio-info">Punto de información</label>
+              <p class="fila-opciones">
+                <span>
+                  <input type="checkbox" id="servicio-agua" class="opcion" name="servicio_agua" value="agua_potable">
+                  <label for="servicio-agua">Agua potable</label>
+                </span>
+                <span>
+                  <input type="checkbox" id="servicio-accesibilidad" class="opcion" name="servicio_aseos" value="aseos_accesibles">
+                  <label for="servicio-accesibilidad">Aseos accesibles</label>
+                </span>
+                <span>
+                  <input type="checkbox" id="servicio-descanso" class="opcion" name="servicio_descanso" value="zona_descanso">
+                  <label for="servicio-descanso">Zona de descanso</label>
+                </span>
+                <span>
+                  <input type="checkbox" id="servicio-info" class="opcion" name="servicio_info" value="punto_informacion">
+                  <label for="servicio-info">Punto de información</label>
+                </span>
+              </p>
             </fieldset>
 
-            <div>
+            <p id="comentarios-bloque">
               <label for="comentarios">Comentarios:</label>
               <textarea id="comentarios" name="comentarios" rows="3" maxlength="300"></textarea>
-            </div>
+            </p>
           </fieldset>
 
           <button type="submit">Enviar inscripción</button>
